@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Dumb Face" />
+    <meta name="description" content="You can contact me here!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="icon" href="../favicon/html5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../style/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <article id="contact">
+      <h1>Contact Me Here!</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas soluta
+        quis cumque animi esse facere temporibus quia eligendi, iusto minus,
+        fuga similique explicabo placeat eius ullam dolore fugiat alias ad.
+      </p>
+
+      <hr />
+
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <p>
+            <label for="firstname">First Name:</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="Your First Name"
+              autocomplete="on"
+              required
+              autofocus
+            />
+          </p>
+
+          <p>
+            <label for="lastname">Last Name:</label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Your Last Name"
+              autocomplete="on"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Your Password"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="9999999999"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="decade">Favorite Decade:</label>
+            <input
+              type="number"
+              name="decade"
+              id="decade"
+              min="1940"
+              max="2020"
+              step="10"
+              value="1980"
+            />
+          </p>
+
+          <p>
+            <label for="food">Favorite Food:</label>
+            <select name="food" id="food" multiple size="5">
+              <optgroup label="Fast Foods">
+                <option value="tacos">Tacos</option>
+                <option value="pizza">Pizza</option>
+                <option value="burger">Burger</option>
+              </optgroup>
+
+              <optgroup label="Desserts">
+                <option value="icecream">Ice Cream</option>
+                <option value="cake">Cake</option>
+                <option value="chocolate">Chocolate</option>
+              </optgroup>
+
+              <optgroup label="Drinks">
+                <option value="coffee" selected>Coffee</option>
+                <option value="tea">Tea</option>
+                <option value="milk">Milk</option>
+              </optgroup>
+
+              <optgroup label="Snacks">
+                <option value="chips">Chips</option>
+                <option value="candy">Candy</option>
+                <option value="popcorn">Popcorn</option>
+              </optgroup>
+
+              <optgroup label="Other">
+                <option value="sushi">Sushi</option>
+                <option value="ramen">Ramen</option>
+                <option value="steak">Steak</option>
+                <option value="pasta">Pasta</option>
+                <option value="other">Other</option>
+              </optgroup>
+            </select>
+          </p>
+
+          <!-- <p>
+            <label for="food">Favorite Food:</label>
+            <input type="text" name="food" id="food" list="foodlist" />
+
+            <datalist id="foodlist">
+              <option value="Tacos"></option>
+              <option value="Pizza"></option>
+              <option value="Burger"></option>
+              <option value="Ice Cream"></option>
+              <option value="Cake"></option>
+              <option value="Chocolate"></option>
+              <option value="Coffee"></option>
+              <option value="Tea"></option>
+              <option value="Milk"></option>
+              <option value="Chips"></option>
+              <option value="Candy"></option>
+              <option value="Popcorn"></option>
+              <option value="Sushi"></option>
+              <option value="Ramen"></option>
+              <option value="Steak"></option>
+              <option value="Pasta"></option>
+              <option value="Other"></option>
+            </datalist>
+          </p> -->
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>What is your favorite movie?</legend>
+          <p>
+            <input type="radio" name="movie" id="avengers" value="avengers" />
+            <label for="avengers">Avengers</label>
+          </p>
+
+          <p>
+            <input type="radio" name="movie" id="spiderman" value="spiderman" />
+            <label for="spiderman">Spiderman</label>
+          </p>
+
+          <p>
+            <input type="radio" name="movie" id="godfather" value="godfather" />
+            <label for="godfather">Godfather</label>
+          </p>
+
+          <p>
+            <input type="radio" name="movie" id="starwars" value="starwars" />
+            <label for="starwars">Star Wars</label>
+          </p>
+
+          <p>
+            <input
+              type="radio"
+              name="movie"
+              id="harrypotter"
+              value="harrypotter"
+            />
+            <label for="harrypotter">Harry Potter</label>
+          </p>
+
+          <p>
+            <input type="radio" name="movie" id="other" value="other" />
+            <label for="other">Other</label>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Do you have pet pokemons?</legend>
+          <p>
+            <input type="checkbox" name="pikachu" id="pikachu" value="yes" />
+            <label for="pikachu">Pikachu</label>
+          </p>
+
+          <p>
+            <input
+              type="checkbox"
+              name="charmander"
+              id="charmander"
+              value="yes"
+            />
+            <label for="charmander">Charmander</label>
+          </p>
+
+          <p>
+            <input
+              type="checkbox"
+              name="bulbasaur"
+              id="bulbasaur"
+              value="yes"
+            />
+            <label for="bulbasaur">Bulbasaur</label>
+          </p>
+
+          <p>
+            <input 
+                type="checkbox" 
+                name="squirtle" 
+                id="squirtle" 
+                value="yes" 
+            />
+            <label for="squirtle">Squirtle</label>
+          </p>
+
+          <p>
+            <input
+              type="checkbox"
+              name="otherPokemon"
+              id="otherPokemon"
+              value="yes"
+            />
+            <label for="otherPokemon">Other</label>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Leave me a Comment</legend>
+          <p>
+            <label for="comments">Your Comments:</label>
+            <br />
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="10"
+              placeholder="Enter your comments here"
+            ></textarea>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <button type="submit">Submit</button>
+        <button
+          type="submit"
+          formaction="https://httpbin.org/post"
+          formmethod="post"
+        >
+          Post
+        </button>
+        <button type="reset">Reset</button>
+      </form>
+    </article>
+
+    <hr>
+
+    <footer>
+      <p>&copy; 2024 <a href="#">Dumb Face</a>. All rights reserved.</p>
+    </footer>
+
+    <p>
+        <a href="index.html">Back to Home</a>
+    </p>
+
+  </body>
+</html>
